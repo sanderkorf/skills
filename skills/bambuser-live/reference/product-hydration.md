@@ -54,6 +54,9 @@ player.on(player.EVENT.PROVIDE_PRODUCT_DATA, (event) => {
                         let price = priceFactory.current(size.current)
                         if (size.currency) price = price.currency(size.currency)
                         if (size.original != null) price = price.original(size.original)
+                        if (size.perUnit != null) price = price.perUnit(size.perUnit)
+                        if (size.unitAmount != null) price = price.unitAmount(size.unitAmount)
+                        if (size.unitDisplayName) price = price.unitDisplayName(size.unitDisplayName)
                         return price
                       }),
                   ),
@@ -71,7 +74,8 @@ player.on(player.EVENT.PROVIDE_PRODUCT_DATA, (event) => {
 - Nest **sizes under variations** (e.g. colors) for two dropdowns. Flat single-level lists collapse into one combined dropdown.
 - In-player PDP supports at most **two** variation axes.
 - Sale display: set both `.current()` and `.original()` when discounted; player shows both when current &lt; original.
-- Product-level `.sku()` should align with BamHub product reference; ATC uses the **size** sku from the selected combination.
+- Unit price display (e.g. `$77 / 100ml`): optional `.perUnit()`, `.unitAmount()`, `.unitDisplayName()` on the price factory.
+- Product-level `.sku()` should align with BamHub product reference; ATC / wishlist use the **size** sku from the selected combination.
 
 ## Identity mapping
 

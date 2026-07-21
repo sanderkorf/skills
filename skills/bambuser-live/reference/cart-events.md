@@ -1,6 +1,8 @@
 # Cart events
 
-All handlers go inside `window.onBambuserLiveShoppingReady`. In-player cart / ATC stays disabled until these are implemented:
+All handlers go inside `window.onBambuserLiveShoppingReady`. In-player cart / ATC stays disabled until these are implemented.
+
+Configure keys, non-cart events, and method index: [player-api](player-api.md). Wishlist is a separate domain: [wishlist](wishlist.md).
 
 | Event | Purpose |
 |-------|---------|

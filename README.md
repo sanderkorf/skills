@@ -52,7 +52,7 @@ Browse more skills at [skills.sh](https://skills.sh/).
 | Skill | What it does |
 |-------|----------------|
 | [`bambuser-api`](skills/bambuser-api/SKILL.md) | Bambuser Live Shopping REST API — auth, shows, products, webhooks, CMS sync |
-| [`bambuser-live`](skills/bambuser-live/SKILL.md) | Bambuser Live embed/player — cart bridge, product hydration, host UI adapters |
+| [`bambuser-live`](skills/bambuser-live/SKILL.md) | Bambuser Live web player — cart, hydration, wishlist, miniplayer, Player API map |
 
 ## Usage
 
