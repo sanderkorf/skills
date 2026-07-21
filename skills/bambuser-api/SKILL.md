@@ -4,8 +4,8 @@ description: >
   Bambuser Live Shopping REST API — shows, products, highlights, webhooks, stats,
   users, tags, channels. Server-side only. Auth is Authorization: Token (not Bearer).
   Use when calling liveshopping-api, BamHub API keys/scopes, show webhooks, or
-  syncing Bambuser shows into a CMS. Distinct from the Bambuser embed/player SDK
-  and product catalog feeds used for BamHub ingest.
+  syncing Bambuser shows into a CMS. Distinct from bambuser-live (embed/player
+  cart bridge) and product catalog feeds used for BamHub ingest.
 ---
 
 # Bambuser Live REST API
@@ -96,7 +96,7 @@ Verify origin/contents with `GET /webhooks/{eventId}` (`READ_WEBHOOKS`).
 | Surface | Role |
 |---------|------|
 | Live **REST** API | This skill — server-side shows, webhooks, admin automation |
-| Embed / player SDK | Storefront player, cart/product UI (separate from REST) |
+| Embed / player SDK | Storefront player, cart bridge, product hydration — use **bambuser-live** |
 | Product **catalog feed** | BamHub catalog ingest; often **Bearer** feed secret, not Token API key |
 | CMS sync | Optional — map show fields into CMS documents when the project does that |
 

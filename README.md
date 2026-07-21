@@ -26,7 +26,7 @@ npx skills add sanderkorf/skills --all
 Pick a few:
 
 ```sh
-npx skills add sanderkorf/skills --skill ship --skill commit --skill bambuser-api
+npx skills add sanderkorf/skills --skill ship --skill commit --skill bambuser-api --skill bambuser-live
 ```
 
 Update later:
@@ -51,7 +51,8 @@ Browse more skills at [skills.sh](https://skills.sh/).
 
 | Skill | What it does |
 |-------|----------------|
-| [`bambuser-api`](bambuser-api/SKILL.md) | Bambuser Live Shopping REST API — auth, shows, products, webhooks, CMS sync |
+| [`bambuser-api`](skills/bambuser-api/SKILL.md) | Bambuser Live Shopping REST API — auth, shows, products, webhooks, CMS sync |
+| [`bambuser-live`](bambuser-live/SKILL.md) | Bambuser Live embed/player — cart bridge, product hydration, host UI adapters |
 
 ## Usage
 
@@ -62,6 +63,7 @@ After install, invoke in your agent:
 /commit
 /coverage
 /bambuser-api
+/bambuser-live
 ```
 
 ## Local development
