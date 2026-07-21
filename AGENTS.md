@@ -10,19 +10,17 @@ Guidance for AI coding agents working in this repository.
 
 ```
 skills/
-  {skill-name}/           # kebab-case — general workflows (ship, commit, …)
+  {skill-name}/           # kebab-case — every skill lives here (workflows + domain)
     SKILL.md              # required
-    references/           # optional supporting docs
+    reference/            # optional supporting docs (or references/)
     scripts/              # optional helper scripts
-
-{domain-skill}/           # kebab-case at repo root — domain/API skills (e.g. bambuser-api)
-  SKILL.md
-  reference/              # optional
 ```
+
+Workflows (`ship`, `commit`, …) and domain skills (`bambuser-api`, `bambuser-live`, …) both go under `skills/`. Never put skills at the repo root.
 
 ## Adding a skill
 
-1. Create the skill directory (`skills/<kebab-name>/` for workflows, or `<kebab-name>/` at repo root for domain skills).
+1. Create the skill directory at `skills/<kebab-name>/`.
 2. Add `SKILL.md` with YAML frontmatter (`name`, `description`).
 3. Write clear Workflow and Rules sections the agent can follow step by step.
 4. **Keep [`README.md`](README.md) up to date** (required — see below).
